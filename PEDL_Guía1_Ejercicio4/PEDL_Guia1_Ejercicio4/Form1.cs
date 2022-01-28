@@ -30,10 +30,9 @@ namespace PEDL_Guia1_Ejercicio4
             x = 50; //Inicializamos la variable
             y = 50; //Inicializamos la variable
             objposicion = Posicion.abajo; //Por defecto definimos que se mueve hacia abajo
-            //xmax = 387;
-            //ymax = 723;
-            xmax = Size.Width;
-            ymax = Size.Height;
+            xmax = 633;
+            ymax = 279;
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
