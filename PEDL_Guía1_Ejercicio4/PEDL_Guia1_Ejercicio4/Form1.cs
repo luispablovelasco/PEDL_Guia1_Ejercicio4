@@ -39,16 +39,10 @@ namespace PEDL_Guia1_Ejercicio4
         {
             if (objposicion == Posicion.derecha)
             {
-                if (x == xmax)
-                {
-                    x -= 20;
-                }
-                else
-                {
-                    x += 10; //Desplazarse 10 pixeles a la derecha
-                }
-                
-            } 
+
+                x += 10; //Desplazarse 10 pixeles a la derecha
+            }
+            
 
             if (objposicion == Posicion.izquierda)
             {
