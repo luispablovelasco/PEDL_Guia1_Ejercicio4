@@ -30,54 +30,38 @@ namespace PEDL_Guia1_Ejercicio4
             x = 50; //Inicializamos la variable
             y = 50; //Inicializamos la variable
             objposicion = Posicion.abajo; //Por defecto definimos que se mueve hacia abajo
-            xmax = 724;
-            ymax = 388;
-            
+            //xmax = 387;
+            //ymax = 723;
+            xmax = Size.Width;
+            ymax = Size.Height;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (objposicion == Posicion.derecha)
+            if (objposicion == Posicion.derecha && x <= xmax)
             {
 
                 x += 10; //Desplazarse 10 pixeles a la derecha
             }
             
 
-            if (objposicion == Posicion.izquierda)
+            if (objposicion == Posicion.izquierda && x > 0)
             {
-                if (x == xmax)
-                {
-                    x += 20;
-                }
-                else
-                {
-                    x -= 10; //Desplazarse 10 pixeles a la derecha
-                }
+              
+                    x -= 10; //Desplazarse 10 pixeles a la izquierda
             } 
 
-            if (objposicion == Posicion.arriba)
+            if (objposicion == Posicion.arriba && y > 0)
             {
-                if (y == ymax)
-                {
-                    y += 20;
-                }
-                else
-                {
+
                     y -= 10; //Desplazarse 10 pixeles arriba
-                }
+                
             } 
 
-            if (objposicion == Posicion.abajo)
+            if (objposicion == Posicion.abajo && y <= ymax)
             {
-                if (y == ymax)
-                {
-                    y -= 20;
-                }
-                else
-                {
                     y += 10; //Desplazarse 10 pixeles abajo
-                }
+                
             } 
 
 
